@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Quiz
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src ="script.js"></script>
+    </head>
+    <body>
+        <header class="nav-bar">
+            <img src ="img/logo.png" id = "logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">High Scores</a>
+                    <div class="sub">
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JAVA</a></li>
+
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+             
+            </ul>
+        </header>
+        
+        <div class = "container">
+        <div id = "index" class ="flex-center flex-column box"  >
+            <div id ="switch1">
+            <h1>Select topic</h1><br>
+            <table id = "table">
+                <tr>
+                    <audio id ="click" src ="sound/click.mp3" preload ="auto"></audio>
+                    <td><img src="img/html.png" width ="100" height ="100" onclick="fetchHtmlData()"></td>
+                    <td><img src="img/css.png" width ="110" height ="110" onclick="document.getElementById('click').play();"></td>
+                    <td><img src="img/java.png" width ="100" height ="100" onclick="document.getElementById('click').play();"></td>
+                </tr>
+            </table>
+            </div>
+
+            <div id="questions" style="display: none;">
+
+            </div>
+            <!--
+                <div><a class="btn" href="/quiz.html">Next</a></div>
+            <div id="switch2" style="display: none;">
+                <p id="question">This is where your question appears</p>
+                <ul>
+                    <li><p id="1" class="answer" onclick="answerSelected('1')">answer1 here goes answer1</p></li>
+                    <li><p id="2" class="answer" onclick="answerSelected('2')">answer2 here goes answer2</p></li>
+                    <li><p id="3" class="answer" onclick="answerSelected('3')">answer3 here goes answer3</p></li>
+                    <li><p id="4" class="answer" onclick="answerSelected('4')">answer4 here goes answer4</p></li>
+                </ul>
+                <a class="btn" href="/quiz.html">Next</a></div>
+            </div>
+           -->
+        </div>
+        </div>
+        <footer>
+            <p id="footer">version 1.0</p>
+        </footer>
+    </body>
+</html>

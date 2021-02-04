@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Quiz
+        </title>
+    </head>
+    <body>
+        <header class ="nav-bar">
+               <img src ="img/logo.png" id = "logo">
+            
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">High Scores</a>
+                        <div class="sub">
+                        <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JAVA</a></li>
+    
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                 
+                </ul>
+            </header>
+        </header>
+        <link rel="stylesheet" href="style.css"/>
+        <script src ="script.js"></script>
+        <div class = "container">
+            
+        <div id = "index" class ="flex-center flex-column box"  >
+            <div id = "instructions">
+            <p style="font-weight: bold;">Instructions:</p><br>
+            <p>1) Answer all the question.</p>
+            <p>2) No timer for each questions.</p>
+            <p>3) You can retake the test anytime you want.</p>
+            </div>
+            <form id = "login">
+                <input id ="name" type="text" placeholder ="Enter Name" class ="textbox">
+            </form>
+            <a href="startActivity.html" id ="start"class="btn" onclick="validate()">Start</a>
+            </div>
+        </div>
+        <footer>
+            <p id="footer">version 1.0</p>
+        </footer>
+    </body>
+</html>
